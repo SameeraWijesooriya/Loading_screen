@@ -1,0 +1,59 @@
+.
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #111;
+}
+.container
+{
+position: relative;
+width:100%;
+display:flex;
+justify-content: center;
+align-items: center;
+}
+.ring
+{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: -30px;
+    border-radius:50%;
+    border: 4px  solid #fff;
+    border-top: 4px solid #1b43f5fb;
+}
+.ring::before
+{
+    content:"" ;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: #40f1e9fd;
+    box-shadow: 0 0 0 2px #899191fb,0 0 0 4px #91978ffb,0 0 0 8px #b2bbbbfb ,0 0 0 8px #5bbdb8fb,0 0 0 20px #1ebdb2fb;
+}
+.ring:nth-child(3)
+{
+    position: absolute;
+    top: -66.66px;
+}
+.container p
+{
+    position: absolute;
+    color: #fff;
+    font-size: 0.6cm;
+    font-family: consolas;
+    bottom: -80px;
+    letter-spacing: 0.15cm;
+}
